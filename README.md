@@ -14,7 +14,7 @@ date: 25/10/2022
 - Add WAF to protect the web
 - Walk through parameters and dicussion
 
-## Architecture
+## Deploy Static Web
 
 ![aws_devops-ica drawio(1)](https://user-images.githubusercontent.com/20411077/170626352-684c0b01-dc53-4e8e-bcf8-59194833f303.png)
 
