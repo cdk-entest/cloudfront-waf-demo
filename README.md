@@ -14,41 +14,6 @@ date: 25/10/2022
 - Add WAF to protect the web
 - Walk through parameters and dicussion
 
-## CDK deploy first
-
-deploy welcome hai web
-
-```bash
-cdk deploy WelcomeHaiCloudFrontStack
-```
-
-deploy cdk-amplify web
-
-```bash
-cdk deploy CdkAmplifyCloudFrontStack
-```
-
-deploy waf rules
-
-```bash
-cdk deploy WafRulesDemo
-```
-
-## Verify
-
-- check hit cloudfront cache
-- check geo restricted SG
-
-```bash
-curl https://d32kbvvu3drs8u.cloudfront.net/
-```
-
-- check rate-based IP block
-
-```bash
-test/test_waf_rate_base_rule.py
-```
-
 ## Architecture
 
 ![aws_devops-ica drawio(1)](https://user-images.githubusercontent.com/20411077/170626352-684c0b01-dc53-4e8e-bcf8-59194833f303.png)
@@ -310,3 +275,38 @@ if __name__ == "__main__":
 - Request an ACM certificate to prove you own the domain
 - Configure the CloudFront distribution with the ACM cert and custom domain
 - Go to the other account (Route 53) and create a record CNAME
+
+## CDK deploy first
+
+deploy welcome hai web
+
+```bash
+cdk deploy WelcomeHaiCloudFrontStack
+```
+
+deploy cdk-amplify web
+
+```bash
+cdk deploy CdkAmplifyCloudFrontStack
+```
+
+deploy waf rules
+
+```bash
+cdk deploy WafRulesDemo
+```
+
+## Verify
+
+- check hit cloudfront cache
+- check geo restricted SG
+
+```bash
+curl https://d32kbvvu3drs8u.cloudfront.net/
+```
+
+- check rate-based IP block
+
+```bash
+test/test_waf_rate_base_rule.py
+```
